@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: happy-lunchbox
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
