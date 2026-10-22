@@ -30,9 +30,9 @@ export const menu: MenuItem[] = [
   { id: "water", name: "Bottled water", description: "A refreshing drink to keep them going.", price: 10, category: "Drinks", emoji: "💧", color: "blue" },
   { id: "fruit-juice", name: "Fruit juice", description: "A fruity lunchbox drink.", price: 15, category: "Drinks", emoji: "🧃", color: "yellow" },
   { id: "strawberry-milkshake", name: "Strawberry milkshake", description: "A smooth, fruity milkshake made with strawberry.", price: 25, category: "Drinks", emoji: "🥤", color: "pink" },
-  { id: "chocolate-milkshake", name: "Chocolate milkshake", description: "A cool, creamy chocolate milkshake.", price: 25, category: "Drinks", emoji: "🥤", color: "peach" },
+  { id: "chocolate-milkshake", name: "Chocolate milkshake", description: "A cool, creamy chocolate milkshake.", price: 25, category: "Drinks", emoji: "🥤", color: "brown" },
   { id: "vanilla-milkshake", name: "Vanilla milkshake", description: "A classic, creamy vanilla milkshake.", price: 25, category: "Drinks", emoji: "🥤", color: "yellow" },
-  { id: "banana-milkshake", name: "Banana milkshake", description: "A smooth, creamy milkshake with banana.", price: 25, category: "Drinks", emoji: "🥤", color: "green" },
+  { id: "banana-milkshake", name: "Banana milkshake", description: "A smooth, creamy milkshake with banana.", price: 25, category: "Drinks", emoji: "🥤", color: "yellow" },
 ];
 
 export const delivery = {

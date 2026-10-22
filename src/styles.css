@@ -80,7 +80,7 @@ h1,h2{letter-spacing:-.055em}
 .food-art>span{font-size:61px;filter:drop-shadow(0 8px 6px #243c3412);transition:transform .2s}
 .food-card:hover .food-art>span{transform:scale(1.08) rotate(-4deg)}
 .food-art small{position:absolute;bottom:11px;left:12px;color:#7f806f;font-size:7px;font-weight:700;letter-spacing:.11em}
-.peach{background:#fbefe3}.pink{background:#f8e9e6}.yellow{background:#fbf2d6}.green{background:#eaf0e2}.blue{background:#e7f2f4}
+.peach{background:#fbefe3}.pink{background:#f8e9e6}.yellow{background:#fbf2d6}.green{background:#eaf0e2}.blue{background:#e7f2f4}.brown{background:#ead5c0}
 .food-info{padding:14px 13px 13px}
 .food-title{display:flex;align-items:start;justify-content:space-between;gap:8px}
 .food-title h3{font-size:12px;line-height:1.35;margin:0;letter-spacing:-.02em}
