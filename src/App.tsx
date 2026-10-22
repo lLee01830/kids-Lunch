@@ -228,6 +228,22 @@ function App() {
                 </dl>
               </div>
             </article>
+            <div className="pickup-location">
+              <div className="pickup-location-copy">
+                <div className="eyebrow"><span>✳</span> PRE-ORDER COLLECTION</div>
+                <h3>Picking up your order?</h3>
+                <p>Please arrange your preorder and pickup time with us on WhatsApp before visiting.</p>
+                <address>{businessCard.officeAddress}</address>
+                <a className="button button-dark pickup-directions" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(businessCard.officeAddress)}`} target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+              </div>
+              <iframe
+                className="pickup-map"
+                title={`Map to Happy Lunchbox preorder pickup at ${businessCard.officeAddress}`}
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(businessCard.officeAddress)}&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
       </main>
