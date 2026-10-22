@@ -221,7 +221,8 @@ function App() {
               <div className="business-card-details">
                 <div className="business-card-name"><span>CONTACT</span><h3>{businessCard.firstName} {businessCard.surname}</h3><p>{business.name}</p></div>
                 <dl className="business-card-contacts">
-                  <div><dt>PHONE</dt><dd className="business-card-phones">{businessCard.phoneNumbers.map((phone) => <a key={phone} href={`tel:${phone}`}>{phone}</a>)}</dd></div>
+                  <div><dt>PHONE</dt><dd><a href={`tel:${businessCard.phone}`}>{businessCard.phone}</a></dd></div>
+                  <div><dt>WHATSAPP</dt><dd className="business-card-whatsapp"><a href={`https://wa.me/27${businessCard.whatsapp.replace(/^0/, "")}?text=${encodeURIComponent("Hello, I would like to order food from Happy Lunchbox.")}`} target="_blank" rel="noreferrer">{businessCard.whatsapp}</a><span>Message to order food</span></dd></div>
                   <div><dt>EMAIL</dt><dd><a href={`mailto:${businessCard.email}`}>{businessCard.email}</a></dd></div>
                   <div><dt>OFFICE</dt><dd><address>{businessCard.officeAddress}</address></dd></div>
                 </dl>

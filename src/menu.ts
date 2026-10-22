@@ -54,7 +54,8 @@ export const business = {
 export const businessCard = {
   firstName: "Molebogeng",
   surname: "Thutlane",
-  phoneNumbers: ["0768480839", "0684429460"],
+  phone: "0768480839",
+  whatsapp: "0684429460",
   email: "mthutlane@gmail.com",
   officeAddress: "14735 Tjabedi Street, Mamelodi East, 0122",
 };

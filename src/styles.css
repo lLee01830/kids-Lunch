@@ -152,7 +152,8 @@ h1,h2{letter-spacing:-.055em}
 .business-card-contacts a{text-decoration:none}
 .business-card-contacts a:hover{text-decoration:underline;text-underline-offset:3px}
 .business-card-contacts address{color:#31594b;font-size:10px;font-style:normal;line-height:1.55}
-.business-card-phones{display:grid;justify-items:start;gap:2px}
+.business-card-whatsapp{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.business-card-whatsapp span{color:#788176;font-size:8px;line-height:1.4}
 @media(max-width:620px){.business-card-section{padding:49px 0 54px}.business-card-heading h2{font-size:30px}.business-card{grid-template-columns:1fr}.business-card-brand{min-height:165px;padding:22px}.business-card-brand img{width:52px;height:52px}.business-card-brand strong{font-size:20px}.business-card-details{padding:26px 22px}.business-card-name h3{font-size:23px}.business-card-contacts>div{grid-template-columns:54px minmax(0,1fr)}}
 .site-footer{min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:14px max(5.7vw,24px);color:#92978c;font-size:9px}
 .footer-brand strong{color:#243c34}.footer-brand img{width:35px;height:35px}
