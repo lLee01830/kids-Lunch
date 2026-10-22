@@ -29,6 +29,8 @@ export const menu: MenuItem[] = [
   { id: "ice-cream", name: "Ice cream", description: "A cool, creamy treat for a happy break.", price: 15, category: "Snacks", emoji: "🍦", color: "pink" },
   { id: "water", name: "Bottled water", description: "A refreshing drink to keep them going.", price: 10, category: "Drinks", emoji: "💧", color: "blue" },
   { id: "fruit-juice", name: "Fruit juice", description: "A fruity lunchbox drink.", price: 15, category: "Drinks", emoji: "🧃", color: "yellow" },
+  { id: "milkshake", name: "Milkshake", description: "A cool, creamy drink for a tasty treat.", price: 25, category: "Drinks", emoji: "🥤", color: "pink" },
+  { id: "soft-drink", name: "Soft drink", description: "A fizzy drink to enjoy with lunch.", price: 15, category: "Drinks", emoji: "🥤", color: "blue" },
 ];
 
 export const delivery = {
