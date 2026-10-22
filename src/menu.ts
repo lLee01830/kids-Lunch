@@ -26,6 +26,7 @@ export const menu: MenuItem[] = [
   { id: "fruit-cup", name: "Fresh fruit cup", description: "A colourful cup of seasonal fruit.", price: 15, category: "Snacks", emoji: "🍇", color: "pink" },
   { id: "popcorn", name: "Popcorn", description: "A light, crunchy snack for break time.", price: 10, category: "Snacks", emoji: "🍿", color: "yellow" },
   { id: "yoghurt", name: "Yoghurt", description: "A handy little snack for the school bag.", price: 12, category: "Snacks", emoji: "🥣", color: "peach" },
+  { id: "ice-cream", name: "Ice cream", description: "A cool, creamy treat for a happy break.", price: 15, category: "Snacks", emoji: "🍦", color: "pink" },
   { id: "water", name: "Bottled water", description: "A refreshing drink to keep them going.", price: 10, category: "Drinks", emoji: "💧", color: "blue" },
   { id: "fruit-juice", name: "Fruit juice", description: "A fruity lunchbox drink.", price: 15, category: "Drinks", emoji: "🧃", color: "yellow" },
 ];
