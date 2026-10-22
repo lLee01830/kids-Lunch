@@ -130,6 +130,30 @@ h1,h2{letter-spacing:-.055em}
 .contact-details div span{font-size:8px;letter-spacing:.14em;color:#c4d0bf;margin-bottom:6px}
 .contact-details div strong{font-size:10px;font-weight:500}
 .contact-details>p{grid-column:1 / -1;font-size:9px;color:#c4d0bf;margin:0}
+.contact-card-link{display:inline-block;margin-top:9px;color:#f5c653;font-size:9px;font-weight:700;text-decoration:none}
+.contact-card-link:hover{text-decoration:underline;text-underline-offset:3px}
+.business-card-section{padding:65px 0 72px;background:#f7f7ef}
+.business-card-heading{text-align:center;margin-bottom:25px}
+.business-card-heading h2{font-family:"Playfair Display",Georgia,serif;font-size:34px;font-weight:600;line-height:1.15;margin:10px 0 0}
+.business-card{display:grid;grid-template-columns:.8fr 1.2fr;width:min(780px,100%);min-height:292px;margin:0 auto;border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 18px 45px #243c3416}
+.business-card-brand{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:30px;background:#31594b;color:#fff;text-align:center}
+.business-card-brand img{width:64px;height:64px;padding:8px;border-radius:50%;background:#fff8e9}
+.business-card-brand strong{font-family:"Playfair Display",Georgia,serif;font-size:22px}
+.business-card-brand>span{color:#d7dfcf;font-size:10px}
+.business-card-brand i{position:absolute;right:21px;top:17px;color:#f5c653;font-size:19px;font-style:normal}
+.business-card-details{padding:35px 39px;align-self:center}
+.business-card-name>span,.business-card-contacts dt{color:#87917f;font-size:8px;font-weight:700;letter-spacing:.14em}
+.business-card-name h3{margin:7px 0 2px;color:#243c34;font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:600}
+.business-card-name p{margin:0;color:#788176;font-size:10px}
+.business-card-contacts{display:grid;gap:13px;margin:23px 0 0;padding-top:18px;border-top:1px solid #eae9df}
+.business-card-contacts>div{display:grid;grid-template-columns:58px minmax(0,1fr);align-items:start;gap:8px}
+.business-card-contacts dt,.business-card-contacts dd{margin:0}
+.business-card-contacts dd,.business-card-contacts a{color:#31594b;font-size:10px;line-height:1.55;overflow-wrap:anywhere}
+.business-card-contacts a{text-decoration:none}
+.business-card-contacts a:hover{text-decoration:underline;text-underline-offset:3px}
+.business-card-contacts address{color:#31594b;font-size:10px;font-style:normal;line-height:1.55}
+.business-card-phones{display:grid;justify-items:start;gap:2px}
+@media(max-width:620px){.business-card-section{padding:49px 0 54px}.business-card-heading h2{font-size:30px}.business-card{grid-template-columns:1fr}.business-card-brand{min-height:165px;padding:22px}.business-card-brand img{width:52px;height:52px}.business-card-brand strong{font-size:20px}.business-card-details{padding:26px 22px}.business-card-name h3{font-size:23px}.business-card-contacts>div{grid-template-columns:54px minmax(0,1fr)}}
 .site-footer{min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:14px max(5.7vw,24px);color:#92978c;font-size:9px}
 .footer-brand strong{color:#243c34}.footer-brand img{width:35px;height:35px}
 .site-footer>a:last-child{text-decoration:none;font-weight:600;color:#536954}

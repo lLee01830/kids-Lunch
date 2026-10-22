@@ -51,4 +51,12 @@ export const business = {
   serviceNote: "Delivery depends on your school's location and our delivery schedule. Please confirm your school is on a participating route.",
 };
 
+export const businessCard = {
+  firstName: "Molebogeng",
+  surname: "Thutlane",
+  phoneNumbers: ["0768480839", "0684429460"],
+  email: "mthutlane@gmail.com",
+  officeAddress: "14735 Tjabedi Street, Mamelodi East, 0122",
+};
+
 export const categories = ["All", "Breakfast", "Lunch boxes", "Snacks", "Drinks"] as const;

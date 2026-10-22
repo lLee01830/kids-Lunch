@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
-import { business, categories, delivery, menu, type MenuItem } from "./menu";
+import { business, businessCard, categories, delivery, menu, type MenuItem } from "./menu";
 
 type Cart = Record<string, number>;
 type DeliveryRoute = "participating" | "quote";
@@ -203,13 +203,35 @@ function App() {
 
         <section className="about-section section-wrap" id="about">
           <div className="about-illustration"><div className="about-sun">☀</div><div className="about-card">🥪<span>MADE WITH A<br />LITTLE LOVE</span></div><span className="about-sparkle">✳</span></div>
-          <div className="about-copy"><div className="eyebrow"><span>✳</span> A LITTLE ABOUT US</div><h2>Big care for<br /><em>little lunches.</em></h2><p>Happy Lunchbox is a school-lunch idea built around the little moments that make a school day feel special. We’re putting together a menu that’s easy for parents and fun for kids.</p><p className="placeholder-note">Business details and school partnerships will be added once confirmed.</p><a className="text-link" href="#contact">Say hello <span aria-hidden="true">→</span></a></div>
+          <div className="about-copy"><div className="eyebrow"><span>✳</span> A LITTLE ABOUT US</div><h2>Big care for<br /><em>little lunches.</em></h2><p>Happy Lunchbox is a school-lunch idea built around the little moments that make a school day feel special. We’re putting together a menu that’s easy for parents and fun for kids.</p><p className="placeholder-note">School partnerships and delivery routes will be added once confirmed.</p><a className="text-link" href="#contact">Say hello <span aria-hidden="true">→</span></a></div>
         </section>
 
-        <section className="contact-section" id="contact"><div className="section-wrap contact-inner"><div><div className="eyebrow"><span>✳</span> WE’D LOVE TO HEAR FROM YOU</div><h2>Have a school<br />in mind?</h2><p>Let’s chat about delivery routes and lunchtime possibilities.</p></div><div className="contact-details"><div><span>PHONE</span><strong><a href={`tel:${business.phone.replace(/\s/g, "")}`}>{business.phone}</a></strong></div><div><span>EMAIL</span><strong><a href={`mailto:${business.email}`}>{business.email}</a></strong></div><div><span>WHATSAPP</span><strong><a href={`https://wa.me/${business.whatsapp.replace(/\D/g, "")}`}>{business.whatsapp}</a></strong></div><p>{business.hours}</p></div></div></section>
+        <section className="contact-section" id="contact"><div className="section-wrap contact-inner"><div><div className="eyebrow"><span>✳</span> WE’D LOVE TO HEAR FROM YOU</div><h2>Have a school<br />in mind?</h2><p>Let’s chat about delivery routes and lunchtime possibilities. <a className="contact-card-link" href="#business-card">See the business card ↓</a></p></div><div className="contact-details"><div><span>PHONE</span><strong><a href={`tel:${business.phone.replace(/\s/g, "")}`}>{business.phone}</a></strong></div><div><span>EMAIL</span><strong><a href={`mailto:${business.email}`}>{business.email}</a></strong></div><div><span>WHATSAPP</span><strong><a href={`https://wa.me/${business.whatsapp.replace(/\D/g, "")}`}>{business.whatsapp}</a></strong></div><p>{business.hours}</p></div></div></section>
+
+        <section className="business-card-section" id="business-card" aria-labelledby="business-card-heading">
+          <div className="section-wrap">
+            <div className="business-card-heading"><div className="eyebrow"><span>✳</span> YOUR HAPPY LUNCHBOX CONTACT</div><h2 id="business-card-heading">Let’s keep in touch.</h2></div>
+            <article className="business-card" aria-label={`Business card for ${businessCard.firstName} ${businessCard.surname}`}>
+              <div className="business-card-brand">
+                <img src="/lunchbox.svg" alt="" />
+                <strong>{business.name}</strong>
+                <span>{business.slogan}</span>
+                <i aria-hidden="true">✳</i>
+              </div>
+              <div className="business-card-details">
+                <div className="business-card-name"><span>CONTACT</span><h3>{businessCard.firstName} {businessCard.surname}</h3><p>{business.name}</p></div>
+                <dl className="business-card-contacts">
+                  <div><dt>PHONE</dt><dd className="business-card-phones">{businessCard.phoneNumbers.map((phone) => <a key={phone} href={`tel:${phone}`}>{phone}</a>)}</dd></div>
+                  <div><dt>EMAIL</dt><dd><a href={`mailto:${businessCard.email}`}>{businessCard.email}</a></dd></div>
+                  <div><dt>OFFICE</dt><dd><address>{businessCard.officeAddress}</address></dd></div>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
 
-      <footer className="site-footer"><a className="brand footer-brand" href="#home"><img src="/lunchbox.svg" alt="" /><span><strong>{business.name}</strong><small>{business.slogan}</small></span></a><span>Sample website · Business details to be confirmed</span><a href="#home">Back to top ↑</a></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="#home"><img src="/lunchbox.svg" alt="" /><span><strong>{business.name}</strong><small>{business.slogan}</small></span></a><span>Sample menu · Online ordering not yet enabled</span><a href="#home">Back to top ↑</a></footer>
 
       {cartOpen && <div className="overlay" onMouseDown={(event) => { if (event.target === event.currentTarget) setCartOpen(false); }}>
         <section className="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-describedby="cart-description">

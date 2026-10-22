@@ -8,9 +8,10 @@ A beginner-friendly React, Vite, and TypeScript demo for a school-lunch ordering
 - Search and category filters for the sample menu.
 - Cart quantity controls, item removal, subtotal, and configurable delivery estimates.
 - A checkout form with required-field validation and a clearly labelled demo-order preview.
+- An owner business card with phone, email, and office address details.
 - Central sample menu, business placeholders, and delivery settings in `src/menu.ts`.
 
-This is a front-end demonstration only. It does not transmit orders, take payments, or confirm deliveries. Do not use it to collect real children's personal information. Sample menu prices are not confirmed supplier costs; check availability, ingredients, costs, and delivery routes before launch. All business contact details are placeholders.
+This is a front-end demonstration only. It does not transmit orders, take payments, or confirm deliveries. Do not use it to collect real children's personal information. Sample menu prices are not confirmed supplier costs; check availability, ingredients, costs, and delivery routes before launch. The owner supplied the contact details displayed on the business card; other business and delivery details remain placeholders.
 
 ## Requirements
 
